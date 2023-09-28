@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Weather App</title>
+</head>
+<body>
+    <header>
+        <h1>Weather App</h1>
+    </header>
+    <main>
+        <div class="search-container">
+            <input type="text" id="locationInput" placeholder="Enter location (e.g., city or ZIP code)">
+            <button id="getWeatherBtn">Get Weather</button>
+            <div id="unitToggle">
+                <input type="radio" name="unit" id="celsius" value="metric" checked>
+                <label for="celsius">Celsius</label>
+                <input type="radio" name="unit" id="fahrenheit" value="imperial">
+                <label for="fahrenheit">Fahrenheit</label>
+            </div>
+        </div>
+        <div class="div">
+            <button id="geolocationBtn">Use My Location</button>
+        </div>
+        <div id="weatherInfo">
+            <!-- Weather data will be displayed here -->
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2023 Weather App</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
